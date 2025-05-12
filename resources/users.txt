@@ -1,0 +1,7 @@
+U001,John Doe,28,180.0,5.9,Intermediate,Member
+U002,Jane Smith,32,150.0,5.5,Beginner,Member
+U003,Bob Johnson,40,210.0,6.0,Advanced,Member
+U004,Lisa Wong,25,135.0,5.4,Beginner,Member
+U005,Ahmed Khan,29,175.0,5.8,Intermediate,Member
+U006,Emily Davis,30,160.0,5.7,Intermediate,Member
+U007,David Kim,27,170.0,5.9,Advanced,Member

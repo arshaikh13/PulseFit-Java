@@ -1,0 +1,9 @@
+U001,P001
+U002,P002
+U003,P003
+U004,P001U002,P001,Strength Builder,T001
+U004,P004,Weight Loss Express,T002
+U004,P004,Weight Loss Express,T002
+U004,P004,Weight Loss Express,T002
+U003,P003,Flexibility Boost,T001
+U004,P003,Flexibility Boost,T001

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.PulseFitController"
+            prefWidth="900.0" prefHeight="600.0">
+   <children>
+      <TabPane layoutX="10.0" layoutY="10.0" prefWidth="880.0" prefHeight="580.0">
+         <tabs>
+
+            <!-- Users Tab -->
+            <Tab text="Users">
+               <AnchorPane>
+                  <children>
+                     <Label layoutX="20.0" layoutY="20.0" text="Registered Users" />
+                     <ListView fx:id="usersListView" layoutX="20.0" layoutY="50.0" prefWidth="450.0" prefHeight="450.0" />
+                     <VBox layoutX="500.0" layoutY="50.0" spacing="5.0">
+                        <TextField fx:id="userIdField" promptText="User ID" />
+                        <TextField fx:id="userNameField" promptText="Name" />
+                        <TextField fx:id="userAgeField" promptText="Age" />
+                        <TextField fx:id="userWeightField" promptText="Weight" />
+                        <TextField fx:id="userHeightField" promptText="Height" />
+                        <TextField fx:id="userFitnessField" promptText="Fitness Level" />
+                        <HBox spacing="10.0">
+                           <Button fx:id="addUserButton" text="Add User" />
+                           <Button fx:id="deleteUserButton" text="Delete Selected" />
+                        </HBox>
+                     </VBox>
+                  </children>
+               </AnchorPane>
+            </Tab>
+
+            <!-- Workout Logs Tab -->
+            <Tab text="Workout Logs">
+               <AnchorPane>
+                  <children>
+                     <Label layoutX="20.0" layoutY="20.0" text="Workout Type" />
+                     <ComboBox fx:id="workoutTypeDropdown" layoutX="120.0" layoutY="15.0" prefWidth="200.0" />
+                     <Label layoutX="20.0" layoutY="60.0" text="Duration (min)" />
+                     <TextField fx:id="workoutDurationField" layoutX="120.0" layoutY="55.0" prefWidth="200.0" />
+                     <Button fx:id="logWorkoutButton" layoutX="120.0" layoutY="100.0" text="Log Workout" />
+                     <Button fx:id="deleteWorkoutButton" layoutX="240.0" layoutY="100.0" text="Delete Selected" />
+                     <ListView fx:id="workoutLogsListView" layoutX="350.0" layoutY="20.0" prefWidth="500.0" prefHeight="500.0" />
+                  </children>
+               </AnchorPane>
+            </Tab>
+
+            <!-- Meal Logs Tab -->
+            <Tab text="Meal Logs">
+               <AnchorPane>
+                  <children>
+                     <Label layoutX="20.0" layoutY="20.0" text="Food Item" />
+                     <TextField fx:id="foodItem" layoutX="100.0" layoutY="15.0" prefWidth="200.0" />
+                     <Label layoutX="20.0" layoutY="60.0" text="Calories" />
+                     <TextField fx:id="calories" layoutX="100.0" layoutY="55.0" prefWidth="200.0" />
+                     <Label layoutX="20.0" layoutY="100.0" text="Protein (g)" />
+                     <TextField fx:id="protein" layoutX="100.0" layoutY="95.0" prefWidth="200.0" />
+                     <Label layoutX="20.0" layoutY="140.0" text="Carbs (g)" />
+                     <TextField fx:id="carbs" layoutX="100.0" layoutY="135.0" prefWidth="200.0" />
+                     <Label layoutX="20.0" layoutY="180.0" text="Fats (g)" />
+                     <TextField fx:id="fats" layoutX="100.0" layoutY="175.0" prefWidth="200.0" />
+                     <Button fx:id="logMealBtn" layoutX="100.0" layoutY="220.0" text="Log Meal" />
+                     <Button fx:id="deleteMealButton" layoutX="100.0" layoutY="260.0" text="Delete Meal" />
+                     <ListView fx:id="mealLogsListView" layoutX="330.0" layoutY="20.0" prefWidth="530.0" prefHeight="500.0" />
+                  </children>
+               </AnchorPane>
+            </Tab>
+
+            <!-- Trainers Tab -->
+            <Tab text="Trainers">
+               <AnchorPane>
+                  <children>
+                     <Label layoutX="20.0" layoutY="20.0" text="Trainers List" />
+                     <ListView fx:id="trainerListView" layoutX="20.0" layoutY="50.0" prefWidth="450.0" prefHeight="450.0" />
+                     <VBox layoutX="500.0" layoutY="50.0" spacing="5.0">
+                        <TextField fx:id="trainerIdField" promptText="Trainer ID" />
+                        <TextField fx:id="trainerNameField" promptText="Name" />
+                        <TextField fx:id="trainerAgeField" promptText="Age" />
+                        <TextField fx:id="trainerWeightField" promptText="Weight" />
+                        <TextField fx:id="trainerHeightField" promptText="Height" />
+                        <TextField fx:id="trainerFitnessField" promptText="Fitness Level" />
+                        <HBox spacing="10.0">
+                           <Button fx:id="addTrainerButton" text="Add Trainer" />
+                           <Button fx:id="deleteTrainerButton" text="Delete Selected" />
+                        </HBox>
+                     </VBox>
+                  </children>
+               </AnchorPane>
+            </Tab>
+
+            <!-- Workout Plans Tab -->
+            <Tab text="Workout Plans">
+               <AnchorPane>
+                  <children>
+                     <Label layoutX="20" layoutY="10" text="Available Plans" />
+                     <ListView fx:id="availablePlansListView" layoutX="20" layoutY="40" prefHeight="150" prefWidth="300" />
+
+                     <Label layoutX="350" layoutY="10" text="Assigned Plans" />
+                     <ListView fx:id="assignedPlansListView" layoutX="350" layoutY="40" prefHeight="150" prefWidth="300" />
+
+                     <Label layoutX="20" layoutY="210" text="Select User" />
+                     <ComboBox fx:id="userSelectComboBox" layoutX="110" layoutY="205" prefWidth="150" />
+
+                     <TextField fx:id="newPlanField" layoutX="20" layoutY="300" prefWidth="300" promptText="New Plan Name" />
+                     <Button fx:id="createPlanButton" text="Create Plan" layoutX="330" layoutY="300" />
+                     <Button fx:id="deletePlanButton" text="Delete Plan" layoutX="20" layoutY="360" />
+                  </children>
+               </AnchorPane>
+            </Tab>
+
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
